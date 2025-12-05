@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: amazon
+  labels:
+    app.kubernetes.io/managed-by: argocd
+    name: amazon
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
+    description: "Namespace for the Amazon-related resources"

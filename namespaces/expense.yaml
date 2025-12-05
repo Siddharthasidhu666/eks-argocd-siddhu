@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: expense
+  labels:
+    app.kubernetes.io/managed-by: argocd
+    name: expense
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
+    description: "Namespace for the Expense application components"
